@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* for scrolling demonstration */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+section {
+    padding: 100px;
+    text-align: center;
+    margin-top: 60px; /* space for fixed nav */
+}
+
+#navbar.scrolled {
+    background-color: #444; /* Darker background when scrolled */
+    color: #ff6347; /* Tomato color text when scrolled */
+}
